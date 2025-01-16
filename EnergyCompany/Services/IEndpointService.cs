@@ -5,9 +5,9 @@ namespace EnergyCompany.Services
 {
     public interface IEndpointService
     {
-        void AddEndpoint(Endpoint endpoint);
+        bool AddEndpoint(Endpoint endpoint);
         Endpoint GetEndpoint(string serialNumber);
-        void UpdateEndpoint(string serialNumber, int switchState);
+        bool UpdateEndpoint(string serialNumber, int switchState);
         void DeleteEndpoint(string serialNumber);
         IList<Endpoint> GetAllEndpoints();
     }
